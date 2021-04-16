@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #f5f5f5;
+}
+
+p, label {
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.customers-div {
+    margin: auto;
+    margin-top: 30px;
+    width: 60%;
+}
+
+.top-bar {
+    background-color: #435D7D;
+    border-radius: 3px 3px;
+    display: flex;
+}
+
+.top-bar-text {
+    color: white;
+    font-size: 25px;
+    margin: auto;
+    margin-left: 22px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 850px) {
+    .customers-div {
+        width: 100% !important;
+    }
+    th {
+        font-size: 14px;
+    }
+    td {
+        font-size: 12px !important;
+    }
+    form {
+        width: 100%;
+    }
+}

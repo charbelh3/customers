@@ -1,0 +1,39 @@
+<div class="customers-div">
+  <div class="top-bar">
+    <div class="top-bar-text">
+      <p>{{action}} <span class="bold-text">Customer</span></p>
+    </div>
+  </div>
+
+  <div class="second-container">
+
+    <form action="" ngNativeValidate>
+      <div class="input-div">
+        <label for="">Name</label> <br>
+        <input type="text" [(ngModel)]='name' name="name" required>
+        <br>
+
+        <label for="">Phone Number</label> <br>
+        <input type="text" [(ngModel)]='phoneNumber' name="number" required>
+        <label>Birthday:</label>
+        <input type="date" name="date" id="birthday" [ngModel]="dateOfBirth|date:'yyyy-MM-dd'"
+          (ngModelChange)="dateOfBirth=$event" required>
+        <label>Gender</label>
+        <div class="gender-div">
+          <input type="radio" name="gender" value="Male" [(ngModel)]='gender'>
+          <label>Male</label>
+          <input type="radio" name="gender" [(ngModel)]='gender' value="Female">
+          <label>Female</label>
+        </div>
+
+      </div>
+
+      <div class="bottom">
+        <button (click)='CreateOrEditCustomer()'>Submit</button>
+        <a [routerLink]="['/all-customers']">Back to list</a>
+
+      </div>
+    </form>
+
+  </div>
+</div>

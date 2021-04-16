@@ -1,0 +1,37 @@
+<div class="customers-div">
+  <div class="top-bar">
+    <div class="top-bar-text">
+      <p>Manage <span class="bold-text">Customers</span></p>
+    </div>
+    <button class="green-button" [routerLink]="['/customer']" [queryParams]="{'action':'Create'}">Add New
+      Customer</button>
+  </div>
+
+  <div id="table-div">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Date of Birth</th>
+          <th>Phone Number</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let customer of this.customers'>
+          <td>{{customer.name}}</td>
+          <td>{{customer.gender}}</td>
+          <td>{{customer.dateOfBirth}}</td>
+          <td>{{customer.phoneNumber}}</td>
+          <td><img [routerLink]="['/customer']" [queryParams]="{action: 'Edit', customerID : customer.id}"
+              class="pencil-icon clickable" src="../assets/images/pencil.png" width="20"> <img class="clickable"
+              src="../assets/images/bin.png" width="20" (click)="deleteCustomer(customer.id)"> </td>
+        </tr>
+
+      </tbody>
+
+
+    </table>
+  </div>
+</div>

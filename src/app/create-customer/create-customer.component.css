@@ -1,0 +1,76 @@
+.customers-div {
+    width: 40%;
+}
+
+.second-container {
+    background-color: white;
+    min-height: 200px;
+}
+
+.input-div {
+    padding-top: 20px;
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+.input-div input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
+    font-size: 15px;
+}
+
+.input-div label {
+    color: #566787;
+}
+
+.bottom {
+    min-height: 80px;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bottom button {
+    color: white;
+    background-color: #056fe0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    position: relative;
+    left: 60px;
+    display: inline;
+    font-size: 18px;
+}
+
+.bottom button:hover {
+    background-color: #0765c8;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.bottom a {
+    float: right;
+    position: relative;
+    right: 60px;
+    text-decoration: none;
+    color: #056fe0;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
+
+
+
+.gender-div input {
+    width: auto;
+}
+
+.gender-div label {
+    color: black;
+}
