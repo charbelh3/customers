@@ -25,8 +25,8 @@
           <td>{{customer.dateOfBirth}}</td>
           <td>{{customer.phoneNumber}}</td>
           <td><img [routerLink]="['/customer']" [queryParams]="{action: 'Edit', customerID : customer.id}"
-              class="pencil-icon clickable" src="../assets/images/pencil.png" width="20"> <img class="clickable"
-              src="../assets/images/bin.png" width="20" (click)="deleteCustomer(customer.id)"> </td>
+              class="pencil-icon clickable" src="../../assets/images/pencil.png" width="20"> <img class="clickable"
+              src="../../assets/images/bin.png" width="20" (click)="deleteCustomer(customer.id)"> </td>
         </tr>
 
       </tbody>
